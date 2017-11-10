@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FE2A2A" >
+
+    <RelativeLayout
+        android:id="@+id/top_relBanner"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:padding="10dp" >
+
+      <!--   <ImageView
+            android:id="@+id/lfanyeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/lfanye" /> -->
+
+        <TextView
+            android:id="@+id/text_wanfa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="猜数字"
+            android:textColor="@color/dibu_bg"
+            android:textSize="16sp" />
+
+      <!--   <ImageView
+            android:id="@+id/rfanyeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/rfanye" /> -->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/winning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_relBanner"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="中奖号码：["
+            android:textColor="@color/dibu_bg"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/winningValues2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/dibu_bg"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="]"
+            android:textColor="@color/dibu_bg"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+<!--     <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/winning"
+        android:layout_marginBottom="95dp" > -->
+
+           <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:layout_below="@+id/winning"
+             android:layout_marginTop="0dp"
+             android:layout_marginBottom="75dp" 
+            android:orientation="vertical" >
+
+            <GridView
+                android:id="@+id/wanfa2_gridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                
+                android:numColumns="6" >
+            </GridView>
+        
+  
+        </LinearLayout> 
+<!--     </ScrollView> -->
+
+</RelativeLayout>

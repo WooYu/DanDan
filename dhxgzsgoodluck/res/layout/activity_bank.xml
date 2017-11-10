@@ -1,0 +1,315 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical"
+     android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    tools:context="com.dhxgzs.goodluck.BankActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/black_deep"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/bank_zhuanzhang_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/img_fj_fanhui" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="银行卡转账"
+            android:textColor="@color/dibu_bg"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/zhengwenwenzi" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/icon_bank_chongzhi" />
+
+                <LinearLayout
+                    android:id="@+id/a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:orientation="horizontal"
+                    android:paddingRight="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="银行:"
+                        android:textColor="@color/zhengwenwenzi"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/bank_zhuanzhang_bankName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="工商银行"
+                        android:textColor="@color/zhengwenwenzi"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/a"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:paddingRight="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="收款人:"
+                        android:textColor="@color/zhengwenwenzi"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/bank_zhuanzhang_shoukuanPerson"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="小明"
+                        android:textColor="@color/zhengwenwenzi"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/bank_zhuanzhang_fuzhi_shoukuanPerson"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/fuzhi_selector" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/c"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/b"
+                    android:orientation="horizontal"
+                    android:paddingRight="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="账号:"
+                        android:textColor="@color/zhengwenwenzi"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/bank_zhuanzhang_AccountBank"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="3213222355321121121"
+                        android:textColor="@color/zhengwenwenzi"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/bank_zhuanzhang_fuzhi_AccountBank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/fuzhi_selector" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/d"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/c"
+                    android:orientation="horizontal"
+                    android:paddingRight="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="开户行:"
+                        android:textColor="@color/zhengwenwenzi"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/bank_zhuanzhang_KaiHuBank"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="河南省南阳市"
+                        android:textColor="@color/zhengwenwenzi"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/bank_zhuanzhang_fuzhi_KaiHuBank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/fuzhi_selector" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                
+                android:focusableInTouchMode="true"
+                android:orientation="vertical"
+                android:padding="20dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="请填写您的汇款信息"
+                    android:textColor="@color/titleyanse"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="银行名称"
+                    android:textColor="@color/blue"
+                    android:textSize="14sp" />
+
+                <com.dhxgzs.goodluck.view.LimitEditText
+                    android:id="@+id/bank_zhuanzhang_inputBank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/dibu_bg"
+                    android:hint="请填写您汇款时使用的银行卡所属的银行"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/zhengwenwenzi"
+                    android:textCursorDrawable="@null"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="汇款人姓名"
+                    android:textColor="@color/blue"
+                    android:textSize="14sp" />
+
+                <com.dhxgzs.goodluck.view.LimitEditText
+                    android:id="@+id/bank_zhuanzhang_remitter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/dibu_bg"
+                    android:hint="请填写您汇款时使用的银行卡的户名"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/zhengwenwenzi"
+                    android:textCursorDrawable="@null"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="汇款人账号"
+                    android:textColor="@color/blue"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/bank_zhuanzhang_bankNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/dibu_bg"
+                    android:hint="请填写您汇款时使用的银行卡卡号后四位"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/zhengwenwenzi"
+                    android:textCursorDrawable="@null"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="汇款金额"
+                    android:textColor="@color/blue"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/bank_zhuanzhang_remitMoney"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/dibu_bg"
+                    android:hint="请填写此次汇款金额"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/zhengwenwenzi"
+                    android:textCursorDrawable="@null"
+                    android:textSize="14sp" />
+
+               
+
+                <TextView
+                    android:id="@+id/bank_zhuanzhang_tijiao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/vote_submit_bg4"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="40dp"
+                    android:paddingTop="10dp"
+                    android:text="提交"
+                    android:textColor="@color/dibu_bg"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

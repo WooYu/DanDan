@@ -1,0 +1,8 @@
+eclipse.preferences.version=1
+encoding//src/com/dhxgzs/goodluck/app/Constant.java=UTF-8
+encoding//src/com/dhxgzs/goodluck/entiey/PeiLvTeShuShuoMingBean.java=UTF-8
+encoding//src/com/dhxgzs/goodluck/util/ImageUtil.java=UTF-8
+encoding//src/com/dhxgzs/goodluck/util/SharedPreferencesUtils.java=UTF-8
+encoding//src/com/dhxgzs/goodluck/view/CustomCountDownTimer.java=UTF-8
+encoding//src/com/dhxgzs/goodluck/view/PullToRefreshView.java=UTF-8
+encoding//src/com/dhxgzs/goodluck/wxapi/WxShareAndLoginUtils.java=UTF-8

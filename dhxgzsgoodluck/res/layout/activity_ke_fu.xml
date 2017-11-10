@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical"
+     android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    tools:context="com.dhxgzs.goodluck.KeFuActivity" >
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/black_deep"
+        android:paddingLeft="10dp" >
+
+        <ImageView
+            android:id="@+id/kefu_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/img_fj_fanhui" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="客服"
+            android:textColor="@color/dibu_bg"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    
+     <WebView
+        android:id="@+id/KefuWebview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        
+        android:background="@color/dibu_bg"/>
+
+</LinearLayout>

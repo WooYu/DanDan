@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_gray"
+     android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    tools:context="com.dhxgzs.goodluck.activity.MyGame_notesActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/black_deep"
+        android:paddingLeft="10dp" >
+
+        <ImageView
+            android:id="@+id/my_gameNotes_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/img_fj_fanhui" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="游戏记录"
+            android:textColor="@color/dibu_bg"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <com.dhxgzs.goodluck.view.PullToRefreshView
+        android:id="@+id/main_pull_refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#00000000" >
+
+        <ListView
+            android:id="@+id/my_gameNotesListview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:divider="@null">
+        </ListView>
+    </com.dhxgzs.goodluck.view.PullToRefreshView>
+
+</LinearLayout>

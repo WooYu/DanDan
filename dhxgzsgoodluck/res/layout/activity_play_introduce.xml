@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical"
+     android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    tools:context="com.dhxgzs.goodluck.activity.PlayIntroduce" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/black_deep"
+        android:paddingLeft="10dp" >
+
+        <ImageView
+            android:id="@+id/PI_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/img_fj_fanhui" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="玩法说明"
+            android:textColor="@color/dibu_bg"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bj_introduce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="@color/dibu_bg"
+        android:visibility="gone"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="北京28玩法说明"
+            android:textColor="#468EF4"
+            android:textSize="14sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="北京28采用北京快乐8数据(09:00-23:55):\n北京快乐8开奖结果来源于国家福利彩票北京快乐8开奖号码，每5分钟一期，不停开奖。\n北京快乐8每期开奖共开出20个号码，并按照从小到大的顺序依次排列。\n取其1-6位开奖号码并进行相加，和值的末位数作为幸运28开奖的第一位数值;\n取其7-12位开奖号码并进行相加，和值的末位作为幸运28开奖的第二位数值;\n取其13-18位开奖号码并进行相加，和值的末位作为幸运28开奖的第三位数值。\n将三位数值进行相加，所得的结果即为幸运28的开奖结果。"
+            android:textColor="@color/zhengwenwenzi"
+            android:textSize="12sp" />
+        
+    </LinearLayout>
+     <LinearLayout
+         android:id="@+id/jnd_introduce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:background="@color/dibu_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="加拿大28玩法说明"
+            android:textColor="#468EF4"
+            android:textSize="14sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="加拿大28数据(21:00-次日20:00)为正常销售时间，20:00-21:00(大约)为系统维护时间，具体情况依据加拿大28官方开售时间为准:\n加拿大28开奖结果来源于加拿大福利彩票的加拿大幸运28开奖结果。\n加拿大28每期开奖共开出20个号码，并且按照从小到大的顺序依次排列\n取其2、5、8、11、14、17位数进行相加，和值的末位作为幸运28开奖的第一位数值;\n取其3、6、9、12、15、18位数进行相加，和值的末位作为幸运28开奖的第二位数值;\n取其4、7、10、13、16、19位数进行相加，和值的末位作为幸运28开奖的第三位数值;\n将三位数值进行相加，所得的结果即为幸运28的开奖结果结果。\n幸运28玩法:\n28个号码，抽中即可获得奖励。玩法类型共有以下玩法：\n1、大，小，单，双\n2、小单，小双，大单，大双\n3、极小值 (0-5)，极大值 (22-27)\n4、28个号码定位"
+            android:textColor="@color/zhengwenwenzi"
+            android:textSize="12sp" />
+        
+    </LinearLayout>
+
+</LinearLayout>

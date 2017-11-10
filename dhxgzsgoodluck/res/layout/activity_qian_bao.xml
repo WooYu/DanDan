@@ -1,0 +1,244 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_gray"
+     android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    tools:context="com.dhxgzs.goodluck.activity.QianBaoActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/black_deep"
+        android:padding="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/Qianbao_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/img_fj_fanhui" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="钱包"
+            android:textColor="@color/dibu_bg"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/zhengwenwenzi" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icon_qianbao_bg"
+        
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="30dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_qianbao_pocket" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/qianbao_pocket"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerInParent="true"
+                android:textColor="@color/blue"
+                android:visibility="visible"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/qianbao_YuanBao_Num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_below="@+id/qianbao_pocket"
+                android:text="0.00元宝"
+                android:textColor="@color/dibu_bg"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/qianbao_pocket"
+                android:padding="20dp"
+                android:text="钱包余额"
+                android:textColor="@color/dibu_bg"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+        
+        
+    </LinearLayout>
+        <LinearLayout 
+            android:id="@+id/qianbao_My_bank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:background="@color/dibu_bg"
+            android:layout_marginTop="10dp">
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_qianbao_bank"
+                android:layout_gravity="center_vertical"/>
+            <TextView 
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:textColor="@color/zhengwenwenzi"
+                android:text="我的银行卡"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"/>
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/mine_gary_right"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+        <LinearLayout 
+            android:id="@+id/qianbao_Recharge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:background="@color/dibu_bg"
+            android:layout_marginTop="10dp">
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_qianbao_recharge"
+                android:layout_gravity="center_vertical"/>
+            <TextView 
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:textColor="@color/zhengwenwenzi"
+                android:text="充值"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"/>
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/mine_gary_right"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+        <LinearLayout 
+            android:id="@+id/qianbao_tixian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:background="@color/dibu_bg"
+            android:layout_marginTop="10dp">
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_qianbao_tixian"
+                android:layout_gravity="center_vertical"/>
+            <TextView 
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:textColor="@color/zhengwenwenzi"
+                android:text="提现"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"/>
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/mine_gary_right"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+        <LinearLayout 
+            android:id="@+id/qianbao_Recharge_notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:background="@color/dibu_bg"
+            android:layout_marginTop="10dp">
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_qianbao_recharge_notes"
+                android:layout_gravity="center_vertical"/>
+            <TextView 
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:textColor="@color/zhengwenwenzi"
+                android:text="充值记录"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"/>
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/mine_gary_right"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+        <LinearLayout 
+            android:id="@+id/qianbao_tixian_notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:background="@color/dibu_bg"
+            android:layout_marginTop="10dp">
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_qianbao_tixian_notes"
+                android:layout_gravity="center_vertical"/>
+            <TextView 
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:textColor="@color/zhengwenwenzi"
+                android:text="提现记录"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"/>
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/mine_gary_right"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+    
+    
+
+</LinearLayout>

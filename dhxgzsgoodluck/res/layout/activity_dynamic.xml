@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical"
+     android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    tools:context="com.dhxgzs.goodluck.DynamicActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/black_deep"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="动态"
+            android:textColor="@color/dibu_bg"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <com.dhxgzs.goodluck.view.Kanner
+        android:id="@+id/kanner"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/dibu_bg"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="通知公告"
+            android:textColor="@color/textview_selector"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="我的消息"
+            android:textColor="@color/textview_selector"
+            android:textSize="16sp" />
+
+       
+    </RadioGroup>
+    <!-- 随界面滚动图片 -->
+
+    <TextView
+        android:id="@+id/srcoll_text"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/blue" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.dhxgzs.goodluck.view.MyViewPager
+            android:id="@+id/gviewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </com.dhxgzs.goodluck.view.MyViewPager>
+    </LinearLayout>
+
+</LinearLayout>

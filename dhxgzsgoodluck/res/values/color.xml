@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+     <!-- 底部导航上面线条 -->
+    <color name="dibuxiantiao">#D1D1D1</color>
+    <!-- 底部部导航栏背景颜色 -->
+    
+    <color name="dibu_bg">#ffffff</color>
+    
+    <!-- 字体选中和被选中状态 -->
+    <color name="is_selected">#333333</color>
+    <color name="no_selected">#999999</color>
+     <!-- 底部导航字体颜色 -->
+    <color name="mycolor">#333333</color>
+    <color name="grayColor">#333333</color>
+    <color name="hand_yellow">#ffd636</color>
+    <!-- 幸运28主色 -->
+    <color name="blue">#3b85ff</color>
+    <color name="green">#50a72d</color>
+    <color name="yuse">#028c9e</color>
+    <color name="redbrown">#ba5c00</color>
+    <color name="fense">#e55cca</color>
+    <color name="yellow">#E8F505</color>
+    <color name="red">#F53847</color>
+    
+    <color name="bg_gray">#f2f2f2</color>
+    <color name="fengexian1">#dddddd</color>
+    <color name="fengexian2">#cccccc</color>
+    <color name="tishiwenzi">#999999</color>
+    <color name="zhengwenwenzi">#666666</color>
+    <color name="titleyanse">#333333</color>
+    
+    <color name="fangjian_bg">#D8D1CB</color>
+    <color name="da_xiao">#63A5FD</color>
+    <color name="dan_shuang">#63C9FD</color>
+    <color name="da_xiao_dan_shuang">#66D6BD</color>
+    
+    <color name="huishui_orange">#FEC81E</color>
+    
+    <color name="statelan_bg">#d51c24</color>
+</resources>
+
+
+
+
+
+
+

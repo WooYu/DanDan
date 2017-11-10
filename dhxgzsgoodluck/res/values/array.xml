@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+      <string-array name="select_bank">
+        <item>建设银行</item>
+        <item>中国银行</item>
+        <item>农业银行</item>
+        
+    </string-array> 
+   
+</resources>

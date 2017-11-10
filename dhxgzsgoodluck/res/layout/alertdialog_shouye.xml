@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="赔率说明"
+            android:textColor="@color/dibu_bg"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/odd_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="关闭"
+            android:textColor="@color/dibu_bg"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FEAA24"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="玩法"
+            android:textColor="@color/dibu_bg"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/fengexian1" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="赔率"
+            android:textColor="@color/dibu_bg"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+<!--     <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" > -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dibu_bg"
+            android:orientation="vertical" >
+
+          <ListView
+                android:id="@+id/peilvsm_Listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </ListView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/fengexian1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="【特殊说明】"
+                android:textColor="@color/titleyanse"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_teshu_shuo_ming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="(1) 单注10-20000，总注80000封顶;\n(2) 大小单双20000封顶，极值5000封顶，猜数字5000封顶，组合10000封顶，红绿蓝20000封顶，豹子5000封顶;000000000000000000000000000000000000000"
+                android:textColor="@color/titleyanse" />
+        </LinearLayout>
+    <!-- </ScrollView> -->
+
+</LinearLayout>

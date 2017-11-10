@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/dibu_bg"
+        android:orientation="horizontal"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/trendMap_qihao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.7"
+            android:gravity="center"
+            android:background="@color/dibu_bg"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:text="800067"
+            android:textColor="@color/titleyanse"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/trendMap_lottery_result"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/dibu_bg"
+            android:gravity="center"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:text="17"
+            android:textColor="@color/blue"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/trendMap_big"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/da_xiao"
+            android:gravity="center"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:text="大"
+            android:textColor="@color/dibu_bg"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/trendMap_small"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/da_xiao"
+            android:gravity="center"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:text="小"
+            android:textColor="@color/dibu_bg"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/trendMap_single"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/dan_shuang"
+            android:gravity="center"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:text="单"
+            android:textColor="@color/dibu_bg"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/trendMap_both"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/dan_shuang"
+            android:gravity="center"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:text="双"
+            android:textColor="@color/dibu_bg"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/trendMap_big_single"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/da_xiao_dan_shuang"
+            android:gravity="center"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:text="大单"
+            android:textColor="@color/dibu_bg"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/trendMap_small_single"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/da_xiao_dan_shuang"
+            android:gravity="center"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:text="小单"
+            android:textColor="@color/dibu_bg"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/trendMap_big_both"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/da_xiao_dan_shuang"
+            android:gravity="center"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:text="大双"
+            android:textColor="@color/dibu_bg"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/trendMap_small_both"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/da_xiao_dan_shuang"
+            android:gravity="center"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:text="小双"
+            android:textColor="@color/dibu_bg"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

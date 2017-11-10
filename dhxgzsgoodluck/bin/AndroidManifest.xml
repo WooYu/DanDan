@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dhxgzs.goodluck"
+    android:versionCode="1"
+    android:versionName="1.0.1" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Required -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name=".app.XyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/pcdd_logo"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+
+        <!-- 设置环信应用的AppKey -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="1170170628115806#h28"/>
+        <!-- 声明SDK所需的service SDK核心功能 -->
+        <service
+            android:name="com.hyphenate.chat.EMChatService"
+            android:exported="true" />
+        <service
+            android:name="com.hyphenate.chat.EMJobService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <!-- 声明SDK所需的receiver -->
+        <receiver android:name="com.hyphenate.chat.EMMonitorReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <!-- 可选filter -->
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".ShouYeActivity"
+            android:label="@string/title_activity_shou_ye"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".RechargeActivity"
+            android:label="@string/title_activity_recharge"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".DynamicActivity"
+            android:label="@string/title_activity_dynamic"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MineActivity"
+            android:label="@string/title_activity_mine"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.CaiDanActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".activity.BeiJing28Activity"
+            android:label="@string/title_activity_bei_jing28"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.JiaNaDa28Activity"
+            android:label="@string/title_activity_jia_na_da28"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.FangJianActivity"
+            android:label="@string/title_activity_fang_jian"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.PersonDataActivity"
+            android:label="@string/title_activity_person_data"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.QianBaoActivity"
+            android:label="@string/title_activity_qian_bao"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.MyHuiShuiActivity"
+            android:label="@string/title_activity_my_hui_shui"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.ZhangBian_NotesActivity"
+            android:label="@string/title_activity_zhang_bian__notes"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.Game_NotesActivity"
+            android:label="@string/title_activity_game__notes"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.Share_ErWeiMaActivity"
+            android:label="@string/title_activity_share__er_wei_ma"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.SettingActivity"
+            android:label="@string/title_activity_setting"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.Bound_BankCardActivity"
+            android:label="@string/title_activity_bound__bank_card"
+            android:screenOrientation="portrait">
+<!--             android:theme="@android:style/Theme.Holo.Light.NoActionBar" > -->
+        </activity>
+        <activity
+            android:name=".activity.XiuGai_PasswordActivity"
+            android:label="@string/title_activity_xiu_gai__password"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.QianBaoRechargeActivity"
+            android:label="@string/title_activity_qian_bao_recharge"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.QianBao_TiXian_Activity"
+            android:label="@string/title_activity_qian_bao__ti_xian_"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.RechargeNotesActivity"
+            android:label="@string/title_activity_recharge_notes"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.TiXian_NotesActivity"
+            android:label="@string/title_activity_ti_xian__notes"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Login"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Register"
+            android:label="@string/title_activity_register"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ForgetPasswordActivity"
+            android:label="@string/title_activity_forget_password"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".BoundMobileActivity"
+            android:label="@string/title_activity_bound_mobile"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".welcome.MainActivity1"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".welcome.WelcomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/title_activity_about"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".AlipayActivity"
+            android:label="@string/title_activity_alipay"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".WeiXinActivity"
+            android:label="@string/title_activity_wei_xin"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".BankActivity"
+            android:label="@string/title_activity_bank"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".chatroom.PublicChatRoomsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".chatroom.ChatActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.BettingRecord"
+            android:label="@string/title_activity_betting_record"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.PlayIntroduce"
+            android:label="@string/title_activity_play_introduce"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.TrendMap"
+            android:label="@string/title_activity_trend_map"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.TiXianPassWord"
+            android:label="@string/title_activity_ti_xian_pass_word"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.XiuGaiTiXianPsdActivity"
+            android:label="@string/title_activity_xiu_gai_ti_xian_psd"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.MyBankCardActivity"
+            android:label="@string/title_activity_my_bank_card"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.NoticeWebViewActivity"
+            android:label="@string/title_activity_notice_web_view"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.HuiShuiRuleActivity"
+            android:label="@string/title_activity_hui_shui_rule"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.MyGame_notesActivity"
+            android:label="@string/title_activity_my_game_notes"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activity.MessageWebViewActivity"
+            android:label="@string/title_activity_message_web_view"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".KeFuActivity"
+             android:screenOrientation="portrait"
+            android:label="@string/title_activity_ke_fu" >
+        </activity>
+        <activity
+            android:name=".ShareActivity"
+             android:screenOrientation="portrait"
+            android:label="@string/title_activity_share" >
+        </activity>
+        <activity
+            android:name=".WodeShouYiActivity"
+             android:screenOrientation="portrait"
+            android:label="@string/title_activity_wode_shou_yi" >
+        </activity>
+        <activity
+            android:name=".SharekActivity"
+             android:screenOrientation="portrait"
+            android:label="@string/title_activity_sharek" >
+        </activity>
+        <activity
+            android:name="com.dhxgzs.goodluck.activity.RechargeWebActivity"
+             android:screenOrientation="portrait"
+            android:label="@string/title_activity_sharek" >
+        </activity>
+          <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+    </application>
+
+</manifest>

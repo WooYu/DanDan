@@ -1,0 +1,273 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fengexian1"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".activity.BJpk10Activity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/black_deep"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/JND_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/img_fj_fanhui" />
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="加拿大28"
+            android:textColor="@color/dibu_bg"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/zhengwenwenzi" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1.5 "
+            android:background="@drawable/vote_submit_bg_shouye2" >
+
+            <ImageView
+                android:id="@+id/JND_chujifang"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/img_chujichang"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/jnd_chuji_peilvshuoming"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/JND_chujifang"
+                android:layout_alignLeft="@+id/JND_chujifang"
+                android:layout_marginBottom="10dp" />
+
+            <!--
+                 <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/BJpk10_chuji_peilvshuoming"
+                android:layout_centerHorizontal="true"
+                android:text="最高回水                          "
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+            -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                 >
+
+                <ImageView
+                    android:id="@+id/BJ_user_num1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/img_user_num" />
+
+                <TextView
+                    android:id="@+id/JND_chuji_person_Num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/BJ_user_num1"
+                    android:text="260人"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:textStyle="bold|italic" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/jnd_fir_huishui_pl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/JND_chujifang"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:text="18%"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:textStyle="bold|italic"
+                android:translationX="-20dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1.5 "
+            android:background="@drawable/vote_submit_bg_shouye2" >
+
+            <ImageView
+                android:id="@+id/JND_zhongjifang"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/img_zhongjichang"
+                android:scaleType="fitXY" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" >
+
+                <ImageView
+                    android:id="@+id/BJ_user_num2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/img_user_num" />
+
+                <TextView
+                    android:id="@+id/JND_zhongji_person_Num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/BJ_user_num2"
+                    android:text="260人"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:textStyle="bold|italic" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/jdn_zhongji_peilvshuoming"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/JND_zhongjifang"
+                android:layout_alignLeft="@+id/JND_zhongjifang"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/jnd_sec_huishui_pl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/relativeLayout1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="18%"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:textStyle="bold|italic"
+                android:translationX="-20dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1.5 "
+            android:background="@drawable/vote_submit_bg_shouye2" >
+<ImageView
+                android:id="@+id/JND_gaojifang"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/img_gaojichang"
+                android:scaleType="fitXY" />
+            <ImageView
+                android:id="@+id/jnd_gaoji_peilvshuoming"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/jnd_thr_huishui_pl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/jnd_gaoji_peilvshuoming"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:text="18%"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:textStyle="bold|italic"
+                android:translationX="-20dp"
+                />
+
+            <!--
+                 <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/BJpk10_gaoji_peilvshuoming"
+                android:layout_centerHorizontal="true"
+                android:text="最高回水                          "
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+            -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+        android:layout_centerVertical="true"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                   >
+
+                <ImageView
+                    android:id="@+id/BJ_user_num3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/img_user_num" />
+
+                <TextView
+                    android:id="@+id/JND_gaojiji_person_Num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/BJ_user_num3"
+                    android:text="260人"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:textStyle="bold|italic" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
